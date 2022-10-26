@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+header{
+    height: 70px;
+    background-color: aqua;
+}
+header h1{
+    display:inline-block;
+    padding: 16px 50px; 
+}
+header ul{
+    float: right;
+}
+header ul li{
+    padding: 24px 50px;
+    display:inline-block;
+}
+header ul li a:hover{
+    color: blue;
+    transition: 0.5s;
+    border-radius: 25px;
+    border: 1px solid ;
+    padding: 5px 10px;
+}
+.home a { 
+    border-bottom: 4px  rgb(47, 142, 244) solid;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.mobile-menu{
+    float: right;
+    display: none;
+    padding: 18px;
+}
+.mobile-menu:hover{
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: rgb(213, 213, 213);
+    opacity: .9;
+    transition: 0.3s;
+    z-index: 9999;
+}
+.sidebar ul li a{
+    color: white;
+}
+.sidebar ul li{
+    padding: 24px;
+    transition: 0.5s;
+}
+.sidebar ul li:hover{
+    background-color: aqua;
+    padding: 20px;
+}
+#check:checked ~ .sidebar{
+    left: 0px;
+}
+@media (max-width: 768px){
+    .mobile-menu{
+        display: block;
+    }
+    header ul{
+        display: none;
+    }
+}
+.banner{
+    background-color: rgb(213, 213, 213);
+}
+section{
+    padding: 50px 20px;
+}
+.banner img{
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 5px 3px 5px #fff;
+}
+.banner h2{
+    padding-top: 20px;
+    color: rgb(0, 0, 0);
+    text-shadow: 5px 5px 5px#fff;
+}
+.banner p{
+    color: rgb(0, 0, 0);
+    padding-top: 10px;
+}
+.overview p{
+    color: black;
+    text-align: justify;
+    text-indent: 25px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+.table{
+    background-color: rgb(213, 213, 213);
+}
+table th{
+    background-color: aqua;
+}
+span{
+    color: aqua;
+}
+.about{
+    background-image: url("meme.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.about p{
+    text-indent: 25px;
+    text-shadow: 3px 3px 3px white;
+}
+.about video{
+    padding: 100px 0 100px 0;
+    width: 100%;
+}
+.contact{
+    background-image: url("1.jpg");
+    background-size: cover;
+    padding-bottom: 250px;
+    text-align: center;
+}
+.contact label, input, textarea{
+    opacity: .7;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.contact label{
+    color: aliceblue;
+}
+.contact button{
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+footer{
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+}
+footer p{
+    color: white;
+}
